@@ -13,7 +13,7 @@ class FeaturedBooksListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
           return const Padding(
-            padding: EdgeInsets.only(left: 15.0),
+            padding: EdgeInsets.only(right: 15.0),
             child: CustomListviewIteam(),
           );
         },
