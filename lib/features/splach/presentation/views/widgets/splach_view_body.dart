@@ -16,6 +16,14 @@ class SplachViewBody extends StatelessWidget {
           AssetsData.logo,
           width: MediaQuery.of(context).size.width * .7,
         ),
+        const SizedBox(
+          height: 10,
+        ),
+        const Text(
+          "Read Free Book",
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 23),
+        ),
       ],
     );
   }
