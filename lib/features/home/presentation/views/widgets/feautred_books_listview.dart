@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'custom_listview_iteam.dart';
+import 'feautred_books_listview_iteam.dart';
 
 class FeaturedBooksListView extends StatelessWidget {
   const FeaturedBooksListView({super.key});
@@ -8,13 +8,13 @@ class FeaturedBooksListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height * .3,
+      height: MediaQuery.of(context).size.height * .28,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
           return const Padding(
             padding: EdgeInsets.only(right: 15.0),
-            child: CustomListviewIteam(),
+            child: FeautredBooksListviewIteam(),
           );
         },
       ),
