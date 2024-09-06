@@ -2,7 +2,7 @@ import 'package:bookly/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../../../core/utils/assets_data.dart';
+import '../../../../../../core/utils/assets_data.dart';
 
 class CusotmAppBar extends StatelessWidget {
   const CusotmAppBar({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'widgets/home_view_body.dart';
+import 'widgets/home_widgets/home_view_body.dart';
 
 class HomeVeiw extends StatelessWidget {
   const HomeVeiw({super.key});

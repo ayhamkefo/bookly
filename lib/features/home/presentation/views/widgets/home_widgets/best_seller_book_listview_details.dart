@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utils/styles.dart';
-import 'book_rating.dart';
+import '../../../../../../core/utils/styles.dart';
+import '../book_rating.dart';
 
 class BestSellerBookDetails extends StatelessWidget {
   const BestSellerBookDetails({super.key});

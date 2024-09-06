@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../constants.dart';
-import '../../../../../core/utils/styles.dart';
-import 'custom_books_limage.dart';
+import '../../../../../../constants.dart';
+import '../../../../../../core/utils/styles.dart';
+import '../custom_books_limage.dart';
 
 class SimilarBooksSection extends StatelessWidget {
   const SimilarBooksSection({super.key});
