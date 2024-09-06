@@ -1,3 +1,4 @@
+import 'package:bookly/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -21,7 +22,7 @@ class CusotmAppBar extends StatelessWidget {
             onPressed: () {},
             icon: const Icon(
               Icons.search,
-              size: 33,
+              size: kAppBarIconSize,
               color: Colors.white,
             ),
           )
