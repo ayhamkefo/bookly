@@ -1,4 +1,5 @@
 import 'package:bookly/constants.dart';
+import 'package:bookly/core/utils/styles.dart';
 import 'package:bookly/features/home/presentation/views/widgets/custom_books_limage.dart';
 import 'package:flutter/material.dart';
 
@@ -20,6 +21,15 @@ class BooksDetailsViewBody extends StatelessWidget {
               padding: EdgeInsets.symmetric(
                   horizontal: width * .22, vertical: kPadding),
               child: const CustomBooksImage()),
+          const Text(
+            "The Jungle Book",
+            style: Styles.textStyle30,
+          ),
+          Text(
+            'Rudyard Kipling',
+            style: Styles.textStyle18
+                .copyWith(fontStyle: FontStyle.italic, color: Colors.white54),
+          ),
         ],
       ),
     );
