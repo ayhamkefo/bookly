@@ -1,4 +1,5 @@
 import 'package:dartz/dartz.dart';
+import 'package:dio/dio.dart';
 
 import '../../../../core/errors/failure.dart';
 import '../../../../core/utils/api_services.dart';
@@ -22,13 +23,15 @@ class HomeRepsIpml implements HomeRepo {
       }
       return right(books);
     } catch (e) {
-      return left(ServerFailuer());
+      if (e is DioException) {
+        return left(ServerFailuer.fromDioException(e));
+      }
+      return left(ServerFailuer(errorMessage: e.toString()));
     }
   }
 
   @override
   Future<Either<Failure, List<BookModel>>> fetchBestSellerBooks() {
-    // TODO: implement fetchBestSellerBooks
     throw UnimplementedError();
   }
 }
