@@ -2,7 +2,7 @@ import 'package:bookly/constants.dart';
 import 'package:bookly/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
-import 'best_seller_listview.dart';
+import 'best_seller_sliver_list.dart';
 import 'custom_app_bar.dart';
 import 'feautred_books_listview.dart';
 
@@ -37,12 +37,7 @@ class HomeViewBody extends StatelessWidget {
           ],
         ),
       ),
-      const SliverFillRemaining(
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: kPadding),
-          child: BestSellerListveiw(),
-        ),
-      ),
+      const BestSellerSliverList()
     ]);
   }
 }

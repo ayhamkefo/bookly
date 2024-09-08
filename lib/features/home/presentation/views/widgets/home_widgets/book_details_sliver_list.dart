@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../../../../core/utils/styles.dart';
 import '../book_rating.dart';
 
-class BestSellerBookDetails extends StatelessWidget {
-  const BestSellerBookDetails({super.key});
+class BookDetailsSliverList extends StatelessWidget {
+  const BookDetailsSliverList({super.key});
 
   @override
   Widget build(BuildContext context) {

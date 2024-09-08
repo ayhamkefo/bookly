@@ -2,11 +2,11 @@ import 'package:bookly/core/utils/routers.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import 'best_seller_book_listview_details.dart';
-import 'best_seller_listview_image.dart';
+import 'book_details_sliver_list.dart';
+import 'book_image_sliver_list.dart';
 
-class BestSellerListVeiwIteam extends StatelessWidget {
-  const BestSellerListVeiwIteam({super.key});
+class BookSliverListIteam extends StatelessWidget {
+  const BookSliverListIteam({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,11 +14,11 @@ class BestSellerListVeiwIteam extends StatelessWidget {
       onTap: () => GoRouter.of(context).push(Routers.kBookDetailsView),
       child: const Row(
         children: [
-          BestSellerListViewImage(),
+          BookImageSliverList(),
           SizedBox(
             width: 30,
           ),
-          BestSellerBookDetails()
+          BookDetailsSliverList()
         ],
       ),
     );

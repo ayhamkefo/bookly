@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../../../../core/utils/assets_data.dart';
 
-class BestSellerListViewImage extends StatelessWidget {
-  const BestSellerListViewImage({super.key});
+class BookImageSliverList extends StatelessWidget {
+  const BookImageSliverList({super.key});
 
   @override
   Widget build(BuildContext context) {
