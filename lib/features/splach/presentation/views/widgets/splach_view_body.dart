@@ -60,6 +60,7 @@ class _SplachViewBodyState extends State<SplachViewBody>
 
   void goToHome() {
     Future.delayed(const Duration(seconds: 3), () {
+      // ignore: use_build_context_synchronously
       GoRouter.of(context).push(Routers.kHomeView);
     });
   }
