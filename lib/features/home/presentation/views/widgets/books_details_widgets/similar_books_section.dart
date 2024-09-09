@@ -29,7 +29,9 @@ class SimilarBooksSection extends StatelessWidget {
             itemBuilder: (context, index) {
               return const Padding(
                 padding: EdgeInsets.only(right: 10.0),
-                child: CustomBooksImage(),
+                child: CustomBooksImage(
+                  imageUrl: '',
+                ),
               );
             },
           ),
