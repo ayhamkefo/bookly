@@ -10,7 +10,6 @@ class CustomBooksImage extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: const BorderRadius.all(Radius.circular(15)),
-          color: Colors.red,
           image:
               DecorationImage(image: NetworkImage(imageUrl), fit: BoxFit.fill),
         ),

@@ -6,8 +6,8 @@ import 'package:go_router/go_router.dart';
 import '../../../../../../core/utils/assets_data.dart';
 import '../../../../../../core/utils/routers.dart';
 
-class CusotmAppBar extends StatelessWidget {
-  const CusotmAppBar({super.key});
+class HomeCusotmAppBar extends StatelessWidget {
+  const HomeCusotmAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {

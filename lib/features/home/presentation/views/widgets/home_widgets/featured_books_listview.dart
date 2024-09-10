@@ -1,8 +1,9 @@
-import 'package:bookly/core/utils/styles.dart';
 import 'package:bookly/features/home/presentation/views_modle/featured_books_cubit/featured_books_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../../../core/widgets/custom_error.dart';
+import '../../../../../../core/widgets/custom_loading.dart';
 import '../custom_books_limage.dart';
 
 class FeaturedBooksListView extends StatelessWidget {
@@ -31,15 +32,11 @@ class FeaturedBooksListView extends StatelessWidget {
             ),
           );
         } else if (state is FeaturedBooksFailuer) {
-          return Text(
-            state.errorMessage,
-            style: Styles.textStyle18,
-            textAlign: TextAlign.center,
+          return CustomError(
+            errorText: state.errorMessage,
           );
         }
-        return const Center(
-          child: CircularProgressIndicator(),
-        );
+        return const CustomLoading();
       },
     );
   }
