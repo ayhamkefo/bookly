@@ -1,4 +1,7 @@
+import 'package:bookly/core/widgets/custom_loading.dart';
+import 'package:bookly/features/home/presentation/views_modle/books_details_cubit/books_details_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../../constants.dart';
 import '../../../../../../core/utils/styles.dart';
@@ -15,40 +18,48 @@ class BooksDetailsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    return Column(
-      children: [
-        const BooksDetailsCustomAppBar(),
-        Padding(
-            padding: EdgeInsets.symmetric(
-                horizontal: width * .25, vertical: kPadding),
-            child: const CustomBooksImage(
-              imageUrl: '',
-            )),
-        const Text(
-          "The Jungle Book",
-          style: Styles.textStyle30,
-        ),
-        const SizedBox(
-          height: 8,
-        ),
-        Text(
-          'Rudyard Kipling',
-          style: Styles.textStyle20
-              .copyWith(fontStyle: FontStyle.italic, color: Colors.white54),
-        ),
-        const SizedBox(
-          height: 17,
-        ),
-        const BooksRating(
-          mainAxisAlignment: MainAxisAlignment.center,
-          bookRating: 5,
-          ratingCount: 10,
-        ),
-        const SizedBox(
-          height: 38,
-        ),
-        const ActionButton(),
-      ],
+    return BlocBuilder<BooksDetailsCubit, BooksDetailsState>(
+      builder: (context, state) {
+        if (state is BooksDetailsSelectBook) {
+          return Column(
+            children: [
+              const BooksDetailsCustomAppBar(),
+              Padding(
+                  padding: EdgeInsets.symmetric(
+                      horizontal: width * .25, vertical: kPadding),
+                  child: CustomBooksImage(
+                      imageUrl:
+                          state.bookModel.volumeInfo!.imageLinks!.thumbnail!)),
+              Text(
+                state.bookModel.volumeInfo!.title!,
+                style: Styles.textStyle30,
+              ),
+              const SizedBox(
+                height: 8,
+              ),
+              Text(
+                state.bookModel.volumeInfo!.authors![0],
+                style: Styles.textStyle20.copyWith(
+                    fontStyle: FontStyle.italic, color: Colors.white54),
+              ),
+              const SizedBox(
+                height: 17,
+              ),
+              BooksRating(
+                mainAxisAlignment: MainAxisAlignment.center,
+                bookRating: state.bookModel.volumeInfo!.averageRating ?? 0,
+                ratingCount: state.bookModel.volumeInfo!.ratingsCount ?? 0,
+              ),
+              const SizedBox(
+                height: 38,
+              ),
+              const ActionButton(),
+            ],
+          );
+        } else {
+          return const CustomLoading();
+        }
+      },
     );
   }
 }
