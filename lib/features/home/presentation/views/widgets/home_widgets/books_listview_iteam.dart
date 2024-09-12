@@ -3,11 +3,11 @@ import 'package:bookly/features/home/data/models/book_model/book_model.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import 'newest_books_listview_details.dart';
-import 'newest_books_listview_image.dart';
+import 'books_listview_details.dart';
+import 'books_listview_image.dart';
 
-class NewestBooksListViewIteam extends StatelessWidget {
-  const NewestBooksListViewIteam({super.key, required this.book});
+class BooksListViewIteam extends StatelessWidget {
+  const BooksListViewIteam({super.key, required this.book});
   final BookModel book;
   @override
   Widget build(BuildContext context) {
@@ -16,13 +16,13 @@ class NewestBooksListViewIteam extends StatelessWidget {
           GoRouter.of(context).push(Routers.kBookDetailsView, extra: book),
       child: Row(
         children: [
-          NewestBooksListViewImage(
+          BooksListViewImage(
             imgUrl: book.volumeInfo!.imageLinks?.thumbnail! ?? '',
           ),
           const SizedBox(
             width: 30,
           ),
-          NewestBooksListViewDetails(
+          BooksListViewDetails(
             book: book,
           )
         ],

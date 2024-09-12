@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import '../../../../../../core/utils/styles.dart';
 import '../book_rating.dart';
 
-class NewestBooksListViewDetails extends StatelessWidget {
-  const NewestBooksListViewDetails({
+class BooksListViewDetails extends StatelessWidget {
+  const BooksListViewDetails({
     super.key,
     required this.book,
   });
@@ -25,7 +25,7 @@ class NewestBooksListViewDetails extends StatelessWidget {
           ),
         ),
         Text(
-          book.volumeInfo!.authors![0],
+          book.volumeInfo!.authors?[0] ?? 'no author',
           style: Styles.textStyle16.copyWith(color: Colors.grey),
         ),
         const SizedBox(

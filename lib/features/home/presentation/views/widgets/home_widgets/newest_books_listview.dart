@@ -5,7 +5,7 @@ import '../../../../../../constants.dart';
 import '../../../../../../core/widgets/custom_error.dart';
 import '../../../../../../core/widgets/custom_loading.dart';
 import '../../../views_model/newest_books_cubit/newest_books_cubit.dart';
-import 'newest_books_listview_iteam.dart';
+import 'books_listview_iteam.dart';
 
 class NewestBooksListView extends StatelessWidget {
   const NewestBooksListView({
@@ -25,7 +25,7 @@ class NewestBooksListView extends StatelessWidget {
             itemBuilder: (context, index) {
               return Padding(
                 padding: const EdgeInsets.only(bottom: 13),
-                child: NewestBooksListViewIteam(
+                child: BooksListViewIteam(
                   book: state.books[index],
                 ),
               );

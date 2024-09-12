@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class NewestBooksListViewImage extends StatelessWidget {
-  const NewestBooksListViewImage({
+class BooksListViewImage extends StatelessWidget {
+  const BooksListViewImage({
     super.key,
     required this.imgUrl,
   });
