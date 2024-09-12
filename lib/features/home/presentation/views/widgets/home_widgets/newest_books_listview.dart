@@ -5,7 +5,7 @@ import '../../../../../../constants.dart';
 import '../../../../../../core/widgets/custom_error.dart';
 import '../../../../../../core/widgets/custom_loading.dart';
 import '../../../views_model/newest_books_cubit/newest_books_cubit.dart';
-import 'books_listview_iteam.dart';
+import '../../../../../../core/widgets/books_listview_iteam.dart';
 
 class NewestBooksListView extends StatelessWidget {
   const NewestBooksListView({

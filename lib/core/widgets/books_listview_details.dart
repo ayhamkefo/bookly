@@ -1,8 +1,8 @@
 import 'package:bookly/features/home/data/models/book_model/book_model.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../../core/utils/styles.dart';
-import '../book_rating.dart';
+import '../utils/styles.dart';
+import 'book_rating.dart';
 
 class BooksListViewDetails extends StatelessWidget {
   const BooksListViewDetails({

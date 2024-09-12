@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../home/data/models/book_model/book_model.dart';
-import '../../../../home/presentation/views/widgets/home_widgets/books_listview_iteam.dart';
+import '../../../../../core/widgets/books_listview_iteam.dart';
 
 class SearchResultListView extends StatelessWidget {
   const SearchResultListView({super.key, required this.bookModel});

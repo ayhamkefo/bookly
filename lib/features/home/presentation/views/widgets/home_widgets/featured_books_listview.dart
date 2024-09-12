@@ -6,7 +6,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../../../../core/widgets/custom_error.dart';
 import '../../../../../../core/widgets/custom_loading.dart';
-import '../custom_books_limage.dart';
+import '../../../../../../core/widgets/custom_books_limage.dart';
 
 class FeaturedBooksListView extends StatelessWidget {
   const FeaturedBooksListView({super.key});

@@ -6,9 +6,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../../constants.dart';
 import '../../../../../../core/utils/styles.dart';
 import 'action_button.dart';
-import '../book_rating.dart';
+import '../../../../../../core/widgets/book_rating.dart';
 import 'books_details_custom_app_bar.dart';
-import '../custom_books_limage.dart';
+import '../../../../../../core/widgets/custom_books_limage.dart';
 
 class BooksDetailsSection extends StatelessWidget {
   const BooksDetailsSection({

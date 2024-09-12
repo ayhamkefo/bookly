@@ -8,7 +8,7 @@ import 'package:go_router/go_router.dart';
 import '../../../../../../constants.dart';
 import '../../../../../../core/utils/routers.dart';
 import '../../../../../../core/utils/styles.dart';
-import '../custom_books_limage.dart';
+import '../../../../../../core/widgets/custom_books_limage.dart';
 
 class SimilarBooksSection extends StatefulWidget {
   const SimilarBooksSection({super.key});
