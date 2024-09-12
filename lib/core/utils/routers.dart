@@ -1,4 +1,4 @@
-import 'package:bookly/features/home/presentation/views_modle/books_details_cubit/books_details_cubit.dart';
+import 'package:bookly/features/home/presentation/views_model/books_details_cubit/books_details_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 

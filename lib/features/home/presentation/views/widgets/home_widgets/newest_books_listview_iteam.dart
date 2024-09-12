@@ -17,7 +17,7 @@ class NewestBooksListViewIteam extends StatelessWidget {
       child: Row(
         children: [
           NewestBooksListViewImage(
-            imgUrl: book.volumeInfo!.imageLinks!.thumbnail!,
+            imgUrl: book.volumeInfo!.imageLinks?.thumbnail! ?? '',
           ),
           const SizedBox(
             width: 30,

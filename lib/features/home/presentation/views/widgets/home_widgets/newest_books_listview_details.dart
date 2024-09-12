@@ -35,7 +35,10 @@ class NewestBooksListViewDetails extends StatelessWidget {
           children: [
             const Text(
               'Free',
-              style: Styles.textStyle15,
+              style: Styles.textStyle18,
+            ),
+            const SizedBox(
+              width: 20,
             ),
             BooksRating(
               bookRating: book.volumeInfo!.averageRating ?? 0,

@@ -7,9 +7,12 @@ class SearchTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    TextEditingController? controller;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 30),
       child: TextField(
+        controller: controller,
+        onChanged: (value) => controller,
         style: Styles.textStyle18.copyWith(color: Colors.black),
         decoration: InputDecoration(
           fillColor: Colors.white,

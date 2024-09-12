@@ -1,8 +1,8 @@
 import 'package:bookly/constants.dart';
 import 'package:bookly/core/utils/services_locater.dart';
 import 'package:bookly/features/home/data/repos/home_repo.dart';
-import 'package:bookly/features/home/presentation/views_modle/featured_books_cubit/featured_books_cubit.dart';
-import 'package:bookly/features/home/presentation/views_modle/newest_books_cubit/newest_books_cubit.dart';
+import 'package:bookly/features/home/presentation/views_model/featured_books_cubit/featured_books_cubit.dart';
+import 'package:bookly/features/home/presentation/views_model/newest_books_cubit/newest_books_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

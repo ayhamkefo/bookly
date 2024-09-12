@@ -1,5 +1,5 @@
 import 'package:bookly/core/widgets/custom_loading.dart';
-import 'package:bookly/features/home/presentation/views_modle/books_details_cubit/books_details_cubit.dart';
+import 'package:bookly/features/home/presentation/views_model/books_details_cubit/books_details_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -53,7 +53,9 @@ class BooksDetailsSection extends StatelessWidget {
               const SizedBox(
                 height: 38,
               ),
-              const ActionButton(),
+              ActionButton(
+                previewLink: state.bookModel.volumeInfo!.previewLink,
+              ),
             ],
           );
         } else {

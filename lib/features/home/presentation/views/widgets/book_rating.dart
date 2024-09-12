@@ -22,11 +22,15 @@ class BooksRating extends StatelessWidget {
         const Icon(
           Icons.star_rate_rounded,
           color: kstarColor,
+          size: 22,
         ),
         const SizedBox(
-          width: 6,
+          width: 4,
         ),
-        Text(bookRating.toString()),
+        Text(
+          bookRating.toString(),
+          style: Styles.textStyle18,
+        ),
         const SizedBox(
           width: 6,
         ),

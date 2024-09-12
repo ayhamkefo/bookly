@@ -5,14 +5,16 @@ import '../../../../../../core/widgets/custom_button.dart';
 class ActionButton extends StatelessWidget {
   const ActionButton({
     super.key,
+    this.previewLink,
   });
-
+  final String? previewLink;
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       children: [
-        Expanded(
+        const Expanded(
           child: CustomButton(
+              text: 'Free',
               backgroundColor: Colors.white,
               textColor: Colors.black,
               borderRadius: BorderRadius.only(
@@ -21,9 +23,11 @@ class ActionButton extends StatelessWidget {
         ),
         Expanded(
           child: CustomButton(
-              backgroundColor: Color(0xffEF8262),
+              privewLink: previewLink,
+              text: 'Preview',
+              backgroundColor: const Color(0xffEF8262),
               textColor: Colors.white,
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                   topRight: Radius.circular(12),
                   bottomRight: Radius.circular(12))),
         ),
