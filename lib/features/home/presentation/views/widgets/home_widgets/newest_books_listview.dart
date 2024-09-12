@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../../../constants.dart';
+import '../../../../../../core/utils/constants.dart';
 import '../../../../../../core/widgets/custom_error.dart';
 import '../../../../../../core/widgets/custom_loading.dart';
 import '../../../views_model/newest_books_cubit/newest_books_cubit.dart';

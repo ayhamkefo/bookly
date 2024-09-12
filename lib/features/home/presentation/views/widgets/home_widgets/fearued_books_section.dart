@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../../constants.dart';
+import '../../../../../../core/utils/constants.dart';
 import '../../../../../../core/utils/styles.dart';
 import 'home_custom_app_bar.dart';
 import 'featured_books_listview.dart';

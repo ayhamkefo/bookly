@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../../constants.dart';
+import '../../../../../../core/utils/constants.dart';
 import '../../../../../../core/utils/styles.dart';
 import 'newest_books_listview.dart';
 

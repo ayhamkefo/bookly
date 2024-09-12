@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../../../../constants.dart';
+import '../../../../../../core/utils/constants.dart';
 
 class BooksDetailsCustomAppBar extends StatelessWidget {
   const BooksDetailsCustomAppBar({super.key});
